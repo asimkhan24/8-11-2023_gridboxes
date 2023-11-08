@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid</title>
+  </head>
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      gap: 10px;
+      border: 5px solid black;
+      height: 50vh;
+      width: auto;
+    }
+    .col1 {
+      background-color: rgb(21, 255, 0);
+      grid-row: span 3;
+    }
+    .col2 {
+      background-color: rgb(0, 255, 0);
+      grid-column: span 2;
+    }
+    .col3 {
+      background-color: red;
+    }
+    .col4 {
+      background-color: rgb(212, 255, 0);
+    }
+    .col5 {
+      background-color: red;
+    }
+    .col6 {
+      background-color: rgb(21, 255, 0);
+      grid-row: span 2;
+    }
+    .col7 {
+      background-color: red;
+    }
+    .col8 {
+      background-color: rgb(212, 255, 0);
+    }
+    .col9 {
+      background-color: red;
+    }
+
+    .col10 {
+      background-color: red;
+    }
+    .col11 {
+      background-color: red;
+    }
+    .col12 {
+      background-color: red;
+    }
+
+    /* new */
+
+    .container2 {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: repeat(6, 1fr);
+      border: 5px solid black;
+      height: 70vh;
+      gap: 10px;
+      width: auto;
+      top: 500px;
+    }
+
+    div {
+      color: rgb(117, 33, 33);
+      text-align: center;
+      text-shadow: 1px 1px rgb(194, 178, 178);
+      font-size: 20px;
+      text-transform: uppercase;
+    }
+    .cols1 {
+      background-color: rgb(254, 210, 79);
+      grid-column: span 12;
+    }
+    .cols2 {
+      background-color: rgb(254, 210, 79);
+      grid-column-start: 1;
+      grid-column-end: 7;
+    }
+    .cols3 {
+      background-color: rgb(254, 210, 79);
+      grid-column-start: 7;
+      grid-column-end: 13;
+    }
+    .cols4 {
+      background-color: rgb(254, 210, 79);
+      grid-column: span 4;
+    }
+    .cols5 {
+      background-color: rgb(254, 210, 79);
+      grid-column: span 4;
+    }
+    .cols6 {
+      background-color: rgb(254, 210, 79);
+      grid-column: span 4;
+    }
+    .cols7 {
+      background-color: rgb(254, 210, 79);
+      grid-column: span 3;
+    }
+
+    .cols8 {
+      background-color: rgb(254, 210, 79);
+      grid-column: span 3;
+    }
+    .cols9 {
+      background-color: rgb(254, 210, 79);
+      grid-column: span 3;
+    }
+    .cols10 {
+      background-color: rgb(254, 210, 79);
+      grid-column: span 3;
+    }
+    .cols11 {
+      background-color: rgb(254, 210, 79);
+      grid-column: span 2;
+    }
+    .cols12 {
+      background-color: rgb(254, 210, 79);
+      grid-column: span 2;
+    }
+    .cols13 {
+      background-color: rgb(254, 210, 79);
+      grid-column: span 2;
+    }
+    .cols14 {
+      background-color: rgb(254, 210, 79);
+      grid-column: span 2;
+    }
+
+    .cols15 {
+      background-color: rgb(254, 210, 79);
+      grid-column: span 2;
+    }
+    .cols16 {
+      background-color: rgb(254, 210, 79);
+      grid-column: span 2;
+    }
+    .cols17 {
+      background-color: rgb(254, 210, 79);
+    }
+    .cols18 {
+      background-color: rgb(254, 210, 79);
+    }
+    .cols19 {
+      background-color: rgb(254, 210, 79);
+    }
+    .cols20 {
+      background-color: rgb(254, 210, 79);
+    }
+    .cols21 {
+      background-color: rgb(254, 210, 79);
+    }
+    .cols22 {
+      background-color: rgb(254, 210, 79);
+    }
+
+    .cols23 {
+      background-color: rgb(254, 210, 79);
+    }
+    .cols24 {
+      background-color: rgb(254, 210, 79);
+    }
+    .cols25 {
+      background-color: rgb(254, 210, 79);
+    }
+    .cols26 {
+      background-color: rgb(254, 210, 79);
+    }
+    .cols27 {
+      background-color: rgb(254, 210, 79);
+    }
+    .cols28 {
+      background-color: rgb(254, 210, 79);
+    }
+  </style>
+
+  <body>
+    <div><h1>Grid Properties</h1></div>
+    <div class="container">
+      <div class="col1"></div>
+      <div class="col2"></div>
+      <div class="col3"></div>
+      <div class="col4"></div>
+      <div class="col5"></div>
+      <div class="col6"></div>
+      <div class="col7"></div>
+      <div class="col8"></div>
+      <div class="col9"></div>
+      <div class="col10"></div>
+    </div>
+    <br />
+    <div class="container2">
+      <div class="cols1">1</div>
+      <div class="cols2">2</div>
+      <div class="cols3">3</div>
+      <div class="cols4">4</div>
+      <div class="cols5">5</div>
+      <div class="cols6">6</div>
+      <div class="cols7">7</div>
+
+      <div class="cols8">8</div>
+      <div class="cols9">9</div>
+      <div class="cols10">10</div>
+      <div class="cols11">11</div>
+      <div class="cols12">12</div>
+      <div class="cols13">13</div>
+      <div class="cols14">14</div>
+
+      <div class="cols15">15</div>
+      <div class="cols16">16</div>
+      <div class="cols17">17</div>
+      <div class="cols18">18</div>
+      <div class="cols19">19</div>
+      <div class="cols20">20</div>
+      <div class="cols21">21</div>
+
+      <div class="cols22">22</div>
+      <div class="cols23">23</div>
+      <div class="cols24">24</div>
+      <div class="cols25">25</div>
+      <div class="cols26">26</div>
+      <div class="cols27">27</div>
+      <div class="cols28">28</div>
+    </div>
+  </body>
+</html>
